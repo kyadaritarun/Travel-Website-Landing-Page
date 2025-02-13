@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100">
+    
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md p-4 flex justify-between items-center z-50">
+        <h1 class="text-xl font-bold text-indigo-600">TravelSphere</h1>
+        <button class="md:hidden text-gray-700 text-2xl" onclick="toggleMenu()">☰</button>
+        <ul id="nav-links" class="hidden md:flex space-x-6 text-gray-700">
+            <li><a href="#Home" class="hover:text-indigo-600">Home</a></li>
+            <li><a href="#about" class="hover:text-indigo-600">About Us</a></li>
+            <li><a href="#services" class="hover:text-indigo-600">Services</a></li>
+            <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+            <li><a href="sign.html" class="hover:text-indigo-600">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-screen bg-cover bg-center flex items-center justify-center text-white text-center" style="background-image: url('heroimage2.jpg');" id="Home">
+        <div class=" bg-opacity-50 p-6 rounded-lg">
+            <h1 class="text-5xl font-bold">Explore The Best <span class="text-blue-400">Beautiful Beaches</span></h1>
+            <button class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-md shadow-lg">Explore</button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 md:px-12 flex flex-wrap-reverse items-center">
+        <div class="w-full md:w-1/2 text-center md:text-left">
+            <h2 class="text-3xl font-bold text-gray-900">More Information About The Best Beaches</h2>
+            <p class="text-gray-600 mt-4">You can find the most beautiful and pleasant places at the best prices.</p>
+            <button class="mt-6 px-6 py-3 bg-teal-800 hover:bg-teal-900 text-white rounded-md">Reserve a place</button>
+        </div>
+        <div class="w-full md:w-1/2">
+            <img src="image2.webp" class="rounded-lg shadow-lg w-full h-auto">
+        </div>
+    </section>
+    
+    <!-- Discover Section -->
+    <section class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Discover The Most Attractive Places</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="relative rounded-lg overflow-hidden shadow-lg">
+                <img src="image1.avif" class="w-full h-64 object-cover">
+                <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">Whitehaven</h3>
+                </div>
+            </div>
+            <div class="relative rounded-lg overflow-hidden shadow-lg">
+                <img src="image3.jpg" class="w-full h-64 object-cover">
+                <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">Bali</h3>
+                </div>
+            </div>
+            <div class="relative rounded-lg overflow-hidden shadow-lg">
+                <img src="image4.jpg" class="w-full h-64 object-cover">
+                <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">Hawaii</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Your Journey, Our Priority</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="ser1.jpg" class="w-full h-48 object-cover rounded">
+                <h3 class="mt-4 font-bold">Bali, Indonesia</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="ser3.jpg" class="w-full h-48 object-cover rounded">
+                <h3 class="mt-4 font-bold">Hawaii, USA</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="ser4.jpg" class="w-full h-48 object-cover rounded">
+                <h3 class="mt-4 font-bold">Bora Bora</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="ser5.jpg" class="w-full h-48 object-cover rounded">
+                <h3 class="mt-4 font-bold">Tidal isle</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="ser6.jpg" class="w-full h-48 object-cover rounded">
+                <h3 class="mt-4 font-bold">Coral Reef cove</h3>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="ser2.jpg" class="w-full h-48 object-cover rounded">
+                <h3 class="mt-4 font-bold">Hidden t\Tide</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 text-center bg-gray-100">
+        <h2 class="text-3xl font-bold text-gray-900">Contact Us</h2>
+        <p class="text-gray-600 mt-4">We'd love to hear from you! Send us a message.</p>
+        <form class="mt-6 max-w-lg mx-auto">
+            <input type="text" class="w-full p-2 border rounded mt-2" placeholder="Your Name">
+            <input type="email" class="w-full p-2 border rounded mt-2" placeholder="Your Email">
+            <textarea class="w-full p-2 border rounded mt-2" rows="4" placeholder="Your Message"></textarea>
+            <button class="w-full p-2 bg-blue-600 hover:bg-blue-700 text-white rounded mt-4">Send Message</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>&copy; 2025 TravelSphere. All Rights Reserved.</p>
+    </footer>
+   
+<script>
+     function toggleMenu() {
+        document.getElementById("nav-links").classList.toggle("hidden");
+    }
+</script>
+</body>
+</html>
